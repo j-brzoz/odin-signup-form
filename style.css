@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -6,14 +8,116 @@
 
 body {
     display: flex;
+    background-color: rgb(226, 222, 222);
 }
 
-.mainImg {
+.picture {
+    position: relative;
     height: 100vh;
+    width: 60vw;
+    background: url(./images/img.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.author a, .author p{
+    text-decoration: none;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: rgb(226, 222, 222);
+    width: 100%;
+    font-size: 48px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    position: relative;
+    top: 10vh;
+}
+
+.title img {
+    height: 72px;
     width: auto;
+}
+
+.title p {
+    padding: 24px 18px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+}
+
+.form {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 12px -8px rgba(66, 68, 90, 1);
+    padding-bottom: 40px;
+}
+
+.form p {
+    font-size: 24px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    padding: 20px 80px;
+    color: #392815;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    gap: 24px;
+    font-size: 12px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.inputs label {
+    width: 280px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid #7a5d3a;
+    font-size: 14px;
+    padding: 4px 8px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.text {
+    font-size: 24px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 48px 80px;
+    padding-top: 180px;
+    color: #392815;
+}
+
+.footer {
+    background-color: #241a0e;
+    color: rgb(226, 222, 222);
+    text-align: center;
+    font-size: 18px;
+    padding: 4px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    height: 30px;
 }
