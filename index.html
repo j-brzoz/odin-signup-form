@@ -9,37 +9,63 @@
 </head>
 <body>
     <div class="picture">
-        <img src="images/img.jpg" alt="wooden interior" class="mainImg">
-        <p>
-            Photo by 
-            <a href="https://unsplash.com/@kennymark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                Kenneth Coffie
-            </a> 
-            on
-            <a href="https://unsplash.com/t/architecture-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                Unsplash
-            </a>
-        </p>
         <div class="title">
             <img src="images/logo.svg" alt="book-logo">
             <p>your library.</p>
+        </div>
+        <div class="author">
+            <p>
+                Photo by
+                <a href="https://unsplash.com/@kennymark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Kenneth Coffie
+                </a>
+                on
+                <a href="https://unsplash.com/t/architecture-interior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash
+                </a>
+            </p>
         </div>
     </div>
     <div class="main">
         <div class="text">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
-                Sign up <italic>now</italic> to get started.
-                <br>
-                You <italic>know</italic> you want to. </p>
+                Sign up <em>now</em> to get started.
+                <br><br>
+                You <em>know</em> you want to. </p>
         </div>
         <div class="form">
             <p>Let's do this!</p>
 
-        </div>
-        <div class="account">
+            <form class="inputs">
+                <label for="firstName">FIRST NAME
+                    <input type="text" id="firstName" name="firstName">
+                </label>
+                
+                <label for="lastName">LAST NAME
+                    <input type="text" id="lastName" name="lastName">
+                </label>
+
+                <label for="email">EMAIL
+                     <input type="email" id="email" name="email">
+                </label>
+
+                <label for="phone">PHONE NUMBER
+                    <input type="number" id="phone" name="phone">
+                </label>
+
+                <label for="password">PASSWORD
+                    <input type="password" id="password" name="password">
+                </label>
+
+                <label for="passwordConfirm">CONFIRM PASSWORD
+                    <input type="password" id="passwordConfirm" name="passwordConfirm">
+                </label>
+            </form>
 
         </div>
-        <div class="bottom">
+        <div class="account">
+        </div>
+        <div class="footer">
             <p>Project from The Odin Project course by Jan Brzozowski</p>
         </div>
     </div>
